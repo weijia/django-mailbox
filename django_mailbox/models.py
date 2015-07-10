@@ -15,10 +15,11 @@ import logging
 import mimetypes
 import os.path
 import sys
+from urlparse import urlparse, parse_qs, unquote
 import uuid
 
 import six
-from six.moves.urllib.parse import parse_qs, unquote, urlparse
+#from six.moves.urllib.parse import parse_qs, unquote, urlparse
 
 from django.conf import settings
 from django.core.files.base import ContentFile
